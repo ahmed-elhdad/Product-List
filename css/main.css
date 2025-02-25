@@ -1,0 +1,442 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin: 0;
+  padding: 30px 60px;
+  background-color: hsl(13, 31%, 94%);
+}
+body h1 {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  text-transform: capitalize;
+  padding-left: 40px;
+}
+body .prudacts-container {
+  display: flex;
+  width: 900px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+body .prudacts-container div {
+  width: 150px;
+  padding: 5px 10px;
+  background-color: hsl(13, 31%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .prudacts-container div > img {
+  width: 180px;
+  border-radius: 15px;
+  height: 180px;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+body .prudacts-container div > img:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+body .prudacts-container div button {
+  background-color: hsl(20, 50%, 98%);
+  border: 1px solid hsl(7, 20%, 60%);
+  width: 130px;
+  padding: 3px 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 30px;
+  border-radius: 15px;
+  gap: 10px;
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 14px;
+  left: 40px;
+  top: -25px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+body .prudacts-container div button svg {
+  padding: 0;
+  height: 20px;
+  width: 18px;
+  color: hsl(14, 86%, 42%);
+}
+body .prudacts-container div button .spanAdd {
+  position: relative;
+  left: 0;
+  padding-top: 2px;
+}
+body .prudacts-container div button:hover, body .prudacts-container div button:active {
+  opacity: 0.7;
+}
+body .prudacts-container div button + h3 {
+  padding-left: 12px;
+  font-size: 10px;
+  color: hsl(12, 20%, 44%);
+  opacity: 0.5;
+}
+body .prudacts-container div h3 + p {
+  padding-left: 10px;
+  font-weight: bold;
+  width: 100%;
+  font-size: 14px;
+  text-wrap: nowrap;
+}
+body .prudacts-container div p + span {
+  color: hsl(14, 86%, 42%);
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 10px;
+}
+body .prudacts-container div .newButton {
+  position: relative;
+  top: -110px;
+  background-color: hsl(14, 86%, 42%);
+}
+body .prudacts-container div .newButton:hover, body .prudacts-container div .newButton:active {
+  opacity: 1;
+}
+body .prudacts-container div .newButton svg {
+  position: relative;
+  color: white;
+  right: -20px;
+  transition: color 0.6s;
+}
+body .prudacts-container div .newButton svg:hover {
+  color: black;
+}
+body .prudacts-container div .newButton .number {
+  color: white;
+}
+body .prudacts-container div .newButton .spanAdd {
+  position: relative;
+  left: -40px;
+}
+body .cart {
+  background-color: hsl(20, 50%, 98%);
+  position: relative;
+  right: -75%;
+  top: -1020px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  padding-bottom: 20px;
+}
+body .cart > h3 {
+  position: relative;
+  left: -100px;
+  color: hsl(14, 86%, 42%);
+  font-weight: bold;
+}
+body .cart svg + p {
+  color: hsl(12, 20%, 44%);
+  font-size: 15px;
+}
+body .cart .parent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: start;
+}
+body .cart .parent .orders {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0;
+}
+body .cart .parent .orders div {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-transform: capitalize;
+  padding: 0;
+  height: 70px;
+}
+body .cart .parent .orders div h4 + p {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -15px;
+  color: hsl(14, 86%, 42%);
+}
+body .cart .parent .orders div h4 + p::after {
+  content: "x";
+}
+body .cart .parent .orders div p + span {
+  color: hsl(7, 20%, 60%);
+  opacity: 0.3;
+  font-size: 13px;
+  position: relative;
+  left: 25px;
+  top: -33px;
+}
+body .cart .parent .orders div span + p {
+  color: hsl(7, 20%, 60%);
+  font-weight: 600;
+  position: relative;
+  left: 80px;
+  top: -65px;
+}
+body .cart .parent .orders div span + p::before {
+  content: "$";
+}
+body .cart .parent .orders div span svg {
+  height: 16px;
+  position: relative;
+  left: 260px;
+  top: -75px;
+  cursor: pointer;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+body .cart .parent .orders div span svg:hover {
+  color: red;
+}
+body .cart .parent .carbon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(13, 31%, 94%);
+  padding: 0px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+  left: 20px;
+}
+body .cart .parent .carbon svg {
+  padding-right: 4px;
+}
+body .cart .parent button {
+  color: white;
+  height: 50px;
+  width: 230px;
+  background-color: hsl(14, 86%, 42%);
+  text-transform: capitalize;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  position: relative;
+  left: 50px;
+  border: 1px solid hsl(14, 86%, 42%);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+body .cart .parent button:hover {
+  background-color: hsl(14, 93%, 34%);
+}
+body .div {
+  background-color: hsl(20, 50%, 98%);
+  height: 400px !important;
+  width: 300px;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 6px;
+  position: relative;
+  left: 40%;
+  top: -1100px;
+  z-index: 2;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+}
+body .div .fa-circle-check {
+  height: 35px;
+  padding: 16px;
+  cursor: pointer;
+  color: hsl(159, 69%, 38%);
+}
+body .div h1 {
+  font-size: 27px;
+  position: relative;
+  left: -20px;
+}
+body .div h1 + p {
+  color: hsl(14, 25%, 72%);
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: 500;
+  position: relative;
+  left: 20px;
+  top: -20px;
+  font-size: 12px;
+}
+body .div .div-2 + div {
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(13, 31%, 94%) !important;
+  width: 90%;
+  height: 70px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: start;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+body .div .div-2 + div img {
+  width: 70px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+body .div .div-2 + div h4 {
+  font-family: sans-serif;
+  position: relative;
+  top: -15px;
+}
+body .div .div-2 + div p {
+  font-weight: 600;
+  font-family: sans-serif;
+  color: hsl(14, 86%, 42%);
+  position: relative;
+  left: -59px;
+  padding-top: 10px;
+  font-size: 16px;
+}
+body .div .div-2 + div p::after {
+  content: "x";
+}
+body .div .div-2 + div span {
+  color: hsl(7, 20%, 60%);
+  font-size: 14px;
+  position: relative;
+  left: -70px;
+  top: 27px;
+  font-weight: 300;
+}
+body .div .div-2 + div span::before {
+  content: "@";
+}
+body .div .div-2 + div h5 {
+  color: black;
+  font-weight: 800;
+  font-size: 18px;
+  position: relative;
+  left: -3px;
+  top: -15px;
+}
+body .div .div-2 + div h5::before {
+  content: "$";
+}
+body .div p {
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  color: hsl(14, 25%, 72%);
+  font-weight: 700;
+}
+body .div p span {
+  padding-right: 5px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+body .div p span::before {
+  content: "$";
+}
+body .div button {
+  color: white;
+  background-color: hsl(14, 86%, 42%);
+  width: 90%;
+  height: 100%;
+  padding: 10px 0;
+  border: 1px solid hsl(14, 86%, 42%);
+  text-transform: capitalize;
+  position: relative;
+  left: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+body .d-none {
+  display: none !important;
+}
+body .events-none {
+  pointer-events: none;
+  cursor: no-drop;
+}
+body .scroll {
+  overflow-y: scroll;
+}
+body .focus {
+  border: hsl(14, 86%, 42%) solid 1px;
+}
+body .all-2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.ov-hidden {
+  overflow: hidden;
+}/*# sourceMappingURL=main.css.map */
